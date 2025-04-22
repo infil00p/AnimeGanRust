@@ -6,6 +6,7 @@ of Transformer-based architectures, it still makes for a nice hello world demo i
 
 ## Instructions to get working:
 * Setup Rust for Android compilation
+* Download ONNX Runtime and build for Android (https://ort.pyke.io/setup/linking) with no backend enabled (haven't tested XNNPack symbol fix yet)
 * Build the Rust project, which is setup to produce a cdylib, which is compatible with Android
 * Copy the JNI directory over
 * Copy libc++_shared.so, needed by ONNX Runtime, even though we're statically linking it (TODO: Fix this)
